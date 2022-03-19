@@ -15,6 +15,11 @@ def convertToF(c):
     fOut = (cLocal * (9/5)) + 32
     print("Input: ", cLocal , " celsius. Out: ", fOut, " farenheight")
 
+    if (fOut > 55):
+        print("It's warm outside!")
+    else:
+        print("Bring a hoodie!")
+
 # Convert to Celsius from Farenheit
     #@args: f (float)
     # f (float): arguemnt to convert from f to c
@@ -22,6 +27,12 @@ def convertToC(f):
     fLocal = float(f)
     cOut = (fLocal - 32) * (5/9)
     print("Input: ", fLocal , " farenheit. Out: ", cOut, " celsius")
+    
+    if(cOut < 0):
+        print("Bruh, don't even go outside")
+
+    else:
+        print("Bruh, why do you even use celsius? Use American Units like a real american!")
 
 # Instead of cluttering __main__, this function calls to get the user's input 
 # and use it as an argument for a function
@@ -48,7 +59,9 @@ def compTheAvg():
 
 #----------------------
 if __name__ == "__main__":
-    #Code goes here
-    whiteSpace(5)
     print("Hello!")
-    compTheAvg()
+    inputC = input("Please enter a celsius number you wish to be farenheight: ")
+    convertToF(inputC)
+
+    #inputF = input("Please enter a celsius number you wish to be farenheight: ")
+    #convertToC(inputF)
