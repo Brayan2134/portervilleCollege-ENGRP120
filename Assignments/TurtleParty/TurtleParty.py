@@ -8,6 +8,8 @@
 
     Notes: Program reading follows Google Python Env. Ruleset (read from bottom to top for appended func)
            https://google.github.io/styleguide/pyguide.html
+
+           FOR MORE DETAILS: https://github.com/Brayan2134/portervilleCollege-ENGRP120
 """
 
 

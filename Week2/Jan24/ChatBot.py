@@ -24,16 +24,37 @@ def main():
     ClassName has not been created yet.
 """
 
+def mainMenu():
+    print("\n What would you like to do?: ")
+    print("[0]: Get Today's Date and Time")
+    print("[1]: Play guessing game (WITH ME!)")
+    print("[2]: Talk about emotional Support!")
+
+    # Check if user input is int
+    while True:
+        try:
+            userChoice = int(input("Please pick a choice!"))
+            if userChoice == 0 or userChoice == 1 or userChoice == 2:
+                print("Ok!")
+                break
+            else:
+                print("Sorry! Invalid option")
+                continue
+        except ValueError:
+            print("Sorry! You chose an invalid option. Please try again \n")
+            continue
+    
+
 
 # Simple introduction @noParams
 def aiIntroduction():
     print("Hello! My name is Steve the chat bot.")
     userName = input("What's your name? ")
     print("Hello, " + userName)
-    
-    howUserFeels()
-    dateTime()
 
+    if (userName.lower() == "brayan"):
+        print("\t No way! That's my name as well!")
+    
 
 # Non-int @noParams
 def howUserFeels():
